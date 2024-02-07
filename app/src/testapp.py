@@ -1,6 +1,8 @@
 import pandas as pd
 import streamlit as st
 import world_bank_data as wb
+import matplotlib.pyplot as plt
+import numpy as np
 
 st.title('Welcome to the Brussels 2024 Dialogue Sample App')
 
@@ -22,6 +24,13 @@ with st.echo(code_location='above'):
     countries:pd.DataFrame = wb.get_countries()
    
     st.dataframe(countries)
+
+with st.echo(code_location='above'):
+    arr = np.random.normal(1, 1, size=100)
+    test_plot, ax = plt.subplots()
+    ax.hist(arr, bins=20)
+
+    st.pyplot(test_plot)
 
 
 
