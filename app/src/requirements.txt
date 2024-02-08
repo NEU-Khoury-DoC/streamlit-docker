@@ -5,3 +5,4 @@ world-bank-data
 matplotlib
 numpy
 pydeck
+requests
