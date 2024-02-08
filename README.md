@@ -24,4 +24,10 @@ streamlit run src/testapp.py
 ```
 
 
+## To Do:
 
+- [ ] Devlop an example ML service that can perform some type of real-time inferencing. (Maybe just start off with like random number generator or something)
+- [ ] Dockerize the ML App
+- [ ] Automate deployment with Actions
+- [ ] Find out about deploying multiple containers to Fly.io from 1 repo. Is that possible?
+- [ ] Find out what the AWS equivalent of Fly.io is

@@ -9,13 +9,12 @@ RUN apt-get update && apt-get install -y \
   git \
   && rm -rf /var/lib/apt/lists/*
 
-RUN mkdir /requirements
-COPY ./src/requirements.txt /requirements/requirements.txt
-# COPY ./src .
+# RUN mkdir /requirements
+# COPY ./src/requirements.txt /requirements/requirements.txt
 
-# VOLUME /src
+COPY ./src .
 
-RUN pip3 install -r /requirements/requirements.txt
+RUN pip3 install -r requirements.txt
 
 EXPOSE 8501
 
