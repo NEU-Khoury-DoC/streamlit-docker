@@ -2,3 +2,6 @@ altair
 pandas
 streamlit
 world-bank-data
+matplotlib
+numpy
+pydeck
