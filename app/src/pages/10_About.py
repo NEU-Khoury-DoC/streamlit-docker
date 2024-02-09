@@ -1,6 +1,10 @@
 
 
 import streamlit as st
+from streamlit_extras.app_logo import add_logo
+
+
+add_logo("assets/logo.png", height=320)
 
 st.set_page_config (page_title="About", page_icon="👋")
 

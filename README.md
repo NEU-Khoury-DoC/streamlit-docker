@@ -1,6 +1,10 @@
 # Sample App for 2024 DoC
 
 ## Changelog
+- 9 Feb 2024:
+  - Reconfigured Docker setup to have top-level Dockerfile for fly.io
+  - Set up auto deploy to fly.io via github actions when pushing to main
+    - Note that once you push to main, it will take up to a couple minutes for the changes to take affect on the public website
 
 - 8 Feb 2024:
   - Added an additional "service" of REST API build using Flask.  There are only 2 simple GET endpoints
