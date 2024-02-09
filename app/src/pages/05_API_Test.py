@@ -19,6 +19,6 @@ try:
   data = requests.get('http://localhost:8989/data').json()
 except:
   st.write("**Important**: Could not connect to sample api, so using dummy data.")
-  data = {"a":{"b": 123, "c": "hello"}, "z": {"b": 456, "c": "goodbye"}}
+  data = {"a":{"b": "123", "c": "hello"}, "z": {"b": "456", "c": "goodbye"}}
 
 st.dataframe(data)
