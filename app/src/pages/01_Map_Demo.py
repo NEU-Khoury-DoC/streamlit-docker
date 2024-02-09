@@ -4,9 +4,11 @@ import pandas as pd
 import pydeck as pdk
 from urllib.error import URLError
 
-add_logo("assets/logo.png", height=320)
+
 
 st.set_page_config(page_title="Mapping Demo", page_icon="🌍")
+
+add_logo("assets/logo.png", height=320)
 
 st.markdown("# Mapping Demo")
 st.sidebar.header("Mapping Demo")
