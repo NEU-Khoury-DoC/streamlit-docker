@@ -8,3 +8,5 @@ numpy
 pydeck
 requests
 openai
+streamlit-authenticator
+st-supabase-connection
