@@ -4,6 +4,7 @@ from streamlit_extras.app_logo import add_logo
 import world_bank_data as wb
 import matplotlib.pyplot as plt
 import numpy as np
+import plotly.express as px
 
 
 
@@ -38,5 +39,8 @@ with st.echo(code_location='above'):
     st.pyplot(test_plot)
 
 
-
-
+with st.echo(code_location='above'):
+    data_crosstab = pd.crosstab(countries['region'], 
+                                countries['incomeLevel'],  
+                                margins = False) 
+    st.table(data_crosstab)
