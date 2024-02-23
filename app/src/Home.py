@@ -40,7 +40,7 @@ with st.echo(code_location='above'):
 
 
 with st.echo(code_location='above'):
-    slim_countries:countries[countries['incomeLevel'] != 'Aggregates']
+    slim_countries = countries[countries['incomeLevel'] != 'Aggregates']
     data_crosstab = pd.crosstab(slim_countries['region'], 
                                 slim_countries['incomeLevel'],  
                                 margins = False) 
