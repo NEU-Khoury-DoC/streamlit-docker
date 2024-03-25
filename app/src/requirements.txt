@@ -10,3 +10,6 @@ requests
 openai
 validators
 plotly
+seaborn
+scikit-learn
+shap
