@@ -13,7 +13,7 @@ add_logo("assets/logo.png", height=320)
 st.title('Welcome to the Brussels 2024 Dialogue Sample App')
 
 st.write("""
-        This is a little sample application to 
+        This is a sample application to 
         demonstrate what you will be able to do by the 
         end of the project.  
 
@@ -22,6 +22,9 @@ st.write("""
         the code for this small app is bundled up in a 
         Docker container and deployed to the public internet
         using Fly.io.
+         
+        To be added: 
+        - Realtime Inferencing 
         """)  
 
 # st.header('World Bank Data')
